@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice de Moyenne</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file with defer attribute -->
+</head>
+<body>
+    <h1>Calculatrice de Moyenne</h1>
+
+    <!-- Grade input fields -->
+    <form onsubmit="calculateGPA(event)">
+        <label for="grade_unit1"><b>Unité 01: Cardio-respiratoire</b></label>
+        <input type="text" id="grade_unit1" placeholder="Entrez votre note"><br><br>
+
+        <label for="grade_unit2"><b>Unité 02: Appareil Neurologique, Locomoteur et Cutané</b></label>
+        <input type="text" id="grade_unit2" placeholder="Entrez votre note"><br><br>
+
+        <label for="grade_unit3"><b>Unité 03: Appareil endocrines, reproduction et urinaire</b></label>
+        <input type="text" id="grade_unit3" placeholder="Entrez votre note"><br><br>
+
+        <label for="grade_unit4"><b>Unité 04: Appareil digestif et Organes Hématopoïétiques</b></label>
+        <input type="text" id="grade_unit4" placeholder="Entrez votre note"><br><br>
+
+        <label for="grade_acp"><b>ACP Anatomie et Cytologie Pathologique</b></label>
+        <input type="text" id="grade_acp" placeholder="Entrez votre note"><br><br>
+
+        <label for="grade_immunologie"><b>Immunologie</b></label>
+        <input type="text" id="grade_immunologie" placeholder="Entrez votre note"><br><br>
+
+        <label for="grade_microbiologie"><b>Microbiologie Médicale</b></label>
+        <input type="text" id="grade_microbiologie" placeholder="Entrez votre note"><br><br>
+
+        <label for="grade_pharmacologie"><b>Pharmacologie Clinique</b></label>
+        <input type="text" id="grade_pharmacologie" placeholder="Entrez votre note"><br><br>
+
+        <!-- Calculate GPA button -->
+        <button id="calculateButton">Calculer la Moyenne</button><br><br>
+
+        <!-- Result and message display areas -->
+        <div id="result"></div>
+        <div id="message"></div>
+    </form>
+
+</body>
+</html>
