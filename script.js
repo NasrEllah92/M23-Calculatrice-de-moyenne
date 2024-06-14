@@ -51,7 +51,7 @@ function calculateGPA(event) {
     // Check GPA and provide feedback
     let messageDisplay = document.getElementById('message');
     if (gpa >= 10.00) {
-        messageDisplay.innerHTML = `<span class="success">Félicitations, vous avez réussi et votre GPA est : ${gpa.toFixed(2)}</span>`;
+        messageDisplay.innerHTML = `<span class="success">Félicitations, vous avez réussi sans le module de parasitologie, et votre moyenne est : ${gpa.toFixed(2)}</span>`;
     } else {
         let requiredGrade = 130 - (gpa * 13);
         if (requiredGrade <= 20.00) {
